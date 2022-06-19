@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 
+@layer components{
+  .iconBtn{
+    @apply p-2 cursor-pointer hover:bg-black50 hover:bg-opacity-20
+    transition-colors duration-200  rounded-md text-2xl
+  }
+}
