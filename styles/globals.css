@@ -3,9 +3,31 @@
 @tailwind utilities;
 
 
+@layer base{
+  .scrollBarHidden::-webkit-scrollbar{
+   
+      display: none;
+    
+  }
+
+}
+
 @layer components{
+
+
   .iconBtn{
     @apply p-2 cursor-pointer hover:bg-black50 hover:bg-opacity-20
     transition-colors duration-200  rounded-md text-2xl
+  }
+  .scrollGradient {
+    background: 
+      linear-gradient(#ffffff 33%, rgba(255,255,255, 0)),
+      linear-gradient(rgba(255,255,255, 0), #ffffff 66%) 0 100%,
+      radial-gradient(farthest-side at 50% 0, rgba(179,179,179, 0.5), rgba(0,0,0,0)),
+      radial-gradient(farthest-side at 50% 100%, rgba(179,179,179, 0.5), rgba(0,0,0,0)) 0 100%;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: local, local, scroll, scroll;
+    background-size: 100% 150px, 100% 150px, 100% 50px, 100% 50px;
   }
 }
