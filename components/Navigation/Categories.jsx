@@ -48,7 +48,7 @@ export function Categories() {
         {/* left arrow */}
         {showLeftArrow && (
           <span className="absolute left-0  z-10 cursor-pointer  py-1 px-4  text-[26px] text-white opacity-90 shadow-black transition-all hover:scale-110 hover:opacity-100 ">
-            <div className="h-fit w-fit  rounded-full bg-black90 shadow-md shadow-black">
+            <div className=" rounded-full bg-black90 shadow-md shadow-black">
               <BsFillArrowLeftCircleFill className="" />
             </div>
           </span>
@@ -76,7 +76,7 @@ export function Categories() {
         {/* right arrow */}
         {showRigtArrow && (
           <span className="absolute right-2  z-10 cursor-pointer  py-1 px-2  text-[26px] text-white opacity-[0.90] shadow-black transition-all hover:scale-110 hover:opacity-100 ">
-            <div className="h-fit w-fit  rounded-full bg-black90 shadow-md shadow-black">
+            <div className="  rounded-full bg-black90 shadow-md shadow-black">
               <BsFillArrowRightCircleFill className="" />
             </div>
           </span>
