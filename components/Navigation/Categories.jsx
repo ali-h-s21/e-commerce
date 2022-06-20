@@ -34,8 +34,8 @@ export function Categories() {
     else setShowRigtArrow(true);
   };
   return (
-    <div className="  self-center w-[80vw] relative  max-w-[1750px] text-md flex items-center justify-center ">
-      <div className="text-white  snap-end relative z-10  left-0 capitalize whitespace-nowrap scroll  cursor-pointer bg-[#2680C9] px-4 py-2 hover:bg-opacity-90   flex justify-center ">
+    <div className="  text-md relative flex  w-[80vw] max-w-[1750px] items-center justify-center self-center ">
+      <div className="scroll  relative left-0 z-10  flex cursor-pointer snap-end justify-center  whitespace-nowrap bg-[#2680C9] px-4 py-2 capitalize   text-white hover:bg-opacity-90 ">
         <div className="flex items-center ">
           <div className="mr-2 ">
             <TbGridDots />
@@ -44,11 +44,11 @@ export function Categories() {
         </div>
       </div>
 
-      <div className="overflow-x-auto overflow-y-hidden  relative flex items-center ">
+      <div className="relative flex  items-center overflow-x-auto overflow-y-hidden ">
         {/* left arrow */}
         {showLeftArrow && (
-          <span className="absolute text-white  opacity-90 z-10  hover:opacity-100 hover:scale-110  cursor-pointer py-1 px-4 transition-all shadow-black left-0 text-[26px] ">
-            <div className="shadow-md shadow-black  w-fit h-fit bg-black90 rounded-full">
+          <span className="absolute left-0  z-10 cursor-pointer  py-1 px-4  text-[26px] text-white opacity-90 shadow-black transition-all hover:scale-110 hover:opacity-100 ">
+            <div className="h-fit w-fit  rounded-full bg-black90 shadow-md shadow-black">
               <BsFillArrowLeftCircleFill className="" />
             </div>
           </span>
@@ -57,16 +57,16 @@ export function Categories() {
         {/* list of categories */}
         <ul
           onScroll={handeleScroll}
-          className="  w-full  flex   divide-[#3387CD] divide-x-[1px] overflow-x-auto scroll-smooth scrollBarHidden snap-x   "
+          className="  scrollBarHidden  flex   w-full snap-x divide-x-[1px] divide-[#3387CD] overflow-x-auto scroll-smooth   "
         >
           {CATEGORIES.map((category, index) => (
             <li
               key={index}
-              className="  text-white snap-start capitalize whitespace-nowrap scroll group cursor-pointer bg-secondary  px-4 py-2 hover:bg-opacity-90  relative flex justify-center "
+              className="  scroll group relative flex cursor-pointer snap-start justify-center whitespace-nowrap  bg-secondary px-4 py-2  capitalize text-white hover:bg-opacity-90 "
             >
               <h4> {category}</h4>
               <span
-                className="bg-white transition-all duration-200  w-0 h-1 group-hover:w-full bottom-0 absolute"
+                className="absolute bottom-0 h-1  w-0 bg-white transition-all duration-200 group-hover:w-full"
                 aria-hidden="true"
               />
             </li>
@@ -75,8 +75,8 @@ export function Categories() {
 
         {/* right arrow */}
         {showRigtArrow && (
-          <span className="absolute text-white  opacity-[0.90] z-10  hover:opacity-100 hover:scale-110  cursor-pointer py-1 px-2 transition-all shadow-black right-2 text-[26px] ">
-            <div className="shadow-md shadow-black  w-fit h-fit bg-black90 rounded-full">
+          <span className="absolute right-2  z-10 cursor-pointer  py-1 px-2  text-[26px] text-white opacity-[0.90] shadow-black transition-all hover:scale-110 hover:opacity-100 ">
+            <div className="h-fit w-fit  rounded-full bg-black90 shadow-md shadow-black">
               <BsFillArrowRightCircleFill className="" />
             </div>
           </span>

@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="max-w-screen h-screen flex flex-col">
+      <div className="max-w-screen flex h-screen flex-col">
         <Categories />
-        <div className="flex-1  ">widgets goes here</div>
+        <div className="flex-1"></div>
       </div>
     </div>
   );
