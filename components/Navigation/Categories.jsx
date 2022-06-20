@@ -34,7 +34,7 @@ export function Categories() {
     else setShowRigtArrow(true);
   };
   return (
-    <div className="  text-md relative flex  w-[80vw] max-w-[1750px] items-center justify-center self-center ">
+    <div className="  text-md relative flex max-w-full   items-center justify-center self-center px-8 ">
       <div className="scroll  relative left-0 z-10  flex cursor-pointer snap-end justify-center  whitespace-nowrap bg-[#2680C9] px-4 py-2 capitalize   text-white hover:bg-opacity-90 ">
         <div className="flex items-center ">
           <div className="mr-2 ">
