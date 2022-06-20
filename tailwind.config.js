@@ -6,6 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        radialBlack:
+          "radial-gradient(50% 50% at 50% 50%, #3A3535 0%, #3A3535 0%, #232C34 0.01%, #000A12 100%);",
+      },
+
+      transitionTimingFunction: {
+        "in-slow": "cubic-bezier(0.73, -0.03, 0.68, 0.71)",
+      },
+      gridTemplateColumns: {
+        3: "repeat(2, minmax(240px,600px)) minmax(142px,240px)",
+      },
       colors: {
         primary: "#2196F3",
         primaryLight: "#6EC6FF",
